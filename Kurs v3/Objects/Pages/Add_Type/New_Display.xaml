@@ -1,0 +1,94 @@
+﻿<Page x:Class="Kurs_v3.Objects.Pages.Add_Type.New_Display"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kurs_v3.Objects.Pages.Add_Type"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="640"
+      Title="New_Display">
+
+    <Grid Background="White">
+        <Border Background="Gray" CornerRadius="50" BorderThickness="10" BorderBrush="Red">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="Name_Display_Text" Margin="18,15,18,10"/>
+
+                    <TextBlock Grid.Column="1" Height="50" Text="Название дисплея" TextAlignment="Center" FontSize="30" FontWeight="Heavy">
+
+                    </TextBlock>
+
+                </Grid>
+
+                <Grid Grid.Row="1">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="Serial_number_Display_text" Margin="18,15,18,10"/>
+
+                    <TextBlock Grid.Column="1" Height="50" Text="Серийный номер" TextAlignment="Center" FontSize="30" FontWeight="Heavy">
+
+                    </TextBlock>
+
+                </Grid>
+                
+                <Grid Grid.Row="2">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="DIsplays_Discription" Margin="18,15,18,10"/>
+
+                    <TextBlock Grid.Column="1" Height="50" Text="Описание" TextAlignment="Center" FontSize="30" FontWeight="Heavy">
+
+                    </TextBlock>
+
+                </Grid>
+                <Grid Grid.Row="3">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="Displays_Cost_Text" Margin="18,15,18,10" TextChanged="Displays_Cost_TextChanged"/>
+
+                    <TextBlock Grid.Column="1" Height="50" Text="Стоимость" TextAlignment="Center" FontSize="30" FontWeight="Heavy">
+
+                    </TextBlock>
+
+                </Grid>
+
+                <Grid Grid.Row="4">
+
+                    <Button Content="Сохранить!" x:Name="Display_Add_Btn" Click="Display_Add_Btn_Click">
+
+                    </Button>
+
+                </Grid>
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+</Page>

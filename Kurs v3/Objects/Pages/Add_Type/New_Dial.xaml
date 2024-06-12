@@ -1,0 +1,89 @@
+﻿<Page x:Class="Kurs_v3.Objects.Pages.Add_Type.New_Dial"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kurs_v3.Objects.Pages.Add_Type"
+      mc:Ignorable="d" 
+     d:DesignHeight="300" d:DesignWidth="640"
+      Title="New_Dial">
+
+    <Grid Background="White">
+        <Border Background="Gray" CornerRadius="50" BorderThickness="10" BorderBrush="Red">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="Name_Dial_Text" Margin="18,15,18,10" />
+
+                    <TextBlock Grid.Column="1" Height="50" Text="Название датчика" TextAlignment="Center" FontSize="30" FontWeight="Heavy">
+
+                    </TextBlock>
+
+                </Grid>
+
+                <Grid Grid.Row="1">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="Serial_number_Dial_text" Margin="18,15,18,10"/>
+
+                    <TextBlock Grid.Column="1" Height="50" Text="Серийный номер" TextAlignment="Center" FontSize="30" FontWeight="Heavy">
+
+                    </TextBlock>
+                </Grid>
+
+                <Grid Grid.Row="2">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="Dials_Discription" Margin="18,15,18,15"/>
+
+                    <TextBlock Grid.Column="1" Height="50" Text="Описание" TextAlignment="Center" FontSize="30" FontWeight="Heavy">
+
+                    </TextBlock>
+                </Grid>
+
+                <Grid Grid.Row="3">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="Dials_Cost_Text" Margin="18,15,18,15" TextChanged="Dials_Cost_TextChanged"/>
+
+                    <TextBlock Grid.Column="1" Height="50" Text="Стоимость" TextAlignment="Center" FontSize="30" FontWeight="Heavy">
+
+                    </TextBlock>
+                </Grid>
+
+
+                <Button Content="Сохранить!" x:Name="Dial_Add_Btn" Click="Dial_Add_Btn_Click" Grid.Row="4">
+
+                </Button>
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+</Page>
