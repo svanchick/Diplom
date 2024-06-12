@@ -14,6 +14,7 @@ namespace Kurs_v3.DB
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            // Подключение
             optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["Home"].ConnectionString);
             
         }
